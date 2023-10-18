@@ -61,7 +61,7 @@ body, input{
 .signin-signup{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
     width: 50%;
     display: grid;
@@ -197,6 +197,16 @@ form.sign-up-form{
     z-index: 7;
 }
 
+.left-panel{
+    pointer-events: all;
+    padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel{
+    pointer-events: none;
+    padding: 3rem 12% 2rem 17%;
+}
+
 .panel .content{
     color: #ffff;
 }
@@ -222,20 +232,10 @@ form.sign-up-form{
     font-size: 0.8rem;
 }
 
-.left-panel{
-    pointer-events: all;
-    padding: 3rem 17% 2rem 12%;
-}
-
-.right-panel{
-    pointer-events: none;
-    padding: 3rem 12% 2rem 17%;
-}
-
 .image{
     width: 100%;
 }
 
 .right-panel .content, .right-panel .image{
-
-}
+    transform: translateX(800px);
+} 
